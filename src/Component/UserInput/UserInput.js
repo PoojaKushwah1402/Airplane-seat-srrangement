@@ -45,6 +45,7 @@ const UserInput = ({ shouldOpen, setShouldOpen, setPlaneSize, setPassengers }) =
     let sizeinput;
     try{
          sizeinput = JSON.parse(size);
+        //  setting the passengers count and airplane size to global states
          setPlaneSize(sizeinput);
          setPassengers(passengerssize);
          setSizeError(false);
@@ -88,6 +89,7 @@ const UserInput = ({ shouldOpen, setShouldOpen, setPlaneSize, setPassengers }) =
                         matrix form :
                     </label>
                     <label className={`error-occur-${sizeError}`} >please enter valid size</label>
+                    {/* for getting the size of the airplane from the user */}
                     <input
                         placeholder="eg: [[3,2],[4,3],[2,3],[3,4]]"
                         className='input-text'
@@ -98,6 +100,7 @@ const UserInput = ({ shouldOpen, setShouldOpen, setPlaneSize, setPassengers }) =
 
                 <div className='item-container' >
                     <label  className="inputlabel">
+                        {/* for getting the count of passengers from user */}
                         Please enter the number of passengers :
                     </label>
                     <input

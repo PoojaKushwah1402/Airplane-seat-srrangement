@@ -14,7 +14,7 @@ const {setPlaneSize, setPassengers} = props
 
   return (
     <Box sx={{ flexGrow: 1 }}>
-      <AppBar position="static">
+      <AppBar position="static">   {/* created a header for the application */}
         <Toolbar>
           <Typography
             variant="h6"
@@ -25,13 +25,15 @@ const {setPlaneSize, setPassengers} = props
             Airplane Seat Arrangement
           </Typography>
           <Box sx={{ flexGrow: 1 }} />
-            <Button color="inherit"
+            {/* on click of this button  UserInput pop up box will appear */}
+            <Button color="inherit" 
                 onClick={()=>setOpenUserInput(true)} >
               Create New Arrangements
             </Button>
         </Toolbar>
       </AppBar>
-      <UserInput 
+      {/*  pop up box for user input */}
+      <UserInput    
         shouldOpen = {openUserInput}
         setShouldOpen= {setOpenUserInput} 
         setPlaneSize= {setPlaneSize}
