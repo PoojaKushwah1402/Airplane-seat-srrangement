@@ -1,0 +1,55 @@
+.main-flexdiv{
+    display: flex;
+    margin: 20px;
+    
+}
+
+.row-div{
+    display: flex;
+    margin: 20px;   
+    justify-content: space-around;
+}
+
+.main-container{
+    border: 1px solid black;
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 2%;
+    margin-bottom: 5%;
+    border-radius: 10px;
+    /* display: flex;
+    flex-direction: column; */
+}
+
+.no-seat{
+    height: 50px;
+}
+
+.asile{
+    border: 1px solid rgb(8, 8, 8);
+    background-color: rgb(21, 21, 126);
+    font-size: large;
+    font-weight: bold;
+    color: blanchedalmond;
+    height: 50px;
+    width: 50px;
+}
+
+.window{
+    border: 1px solid rgb(8, 8, 8);
+    background-color: rgb(11, 160, 11);
+    font-size: large;
+    font-weight: bold;
+    height: 50px;
+    width: 50px;
+}
+
+.middle{
+    border: 1px solid rgb(8, 8, 8);
+    background-color: maroon;
+    font-size: large;
+    font-weight: bold;
+    color: blanchedalmond;
+    height: 50px;
+    width: 50px;  
+}

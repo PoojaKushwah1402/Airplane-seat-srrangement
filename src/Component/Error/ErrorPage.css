@@ -1,0 +1,8 @@
+.error-page{
+    margin: 5%;
+    padding: 2%;
+    background-color: rgb(227, 226, 250);
+    border: 10px;
+    margin-top: 10%;
+    font-weight: bold;
+}

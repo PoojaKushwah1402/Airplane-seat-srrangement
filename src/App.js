@@ -1,23 +1,28 @@
-import logo from './logo.svg';
+import React from 'react'
 import './App.css';
 
+import ConstructSeats from './Component/Seats/Seats';
+import Header from './Component/header/Header';
+import Footer from './Component/footer/Footer'
+
+let arr = [[3,2],[4,3],[2,3],[3,4]]
+
 function App() {
+
+  const [planeSize, setPlaneSize] = React.useState(arr);
+  const [passengers, setPassengers] = React.useState(30);
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+        <Header 
+          setPlaneSize={setPlaneSize} 
+          setPassengers={setPassengers}
+        />
+        <ConstructSeats 
+          planeSize={planeSize}
+          passengers={passengers} 
+        />
+        <Footer/>
     </div>
   );
 }
